@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <!-- head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      
+    <!-- title -->
+    <title>Sorting Visualizer</title>
+  
+    <!-- linking style.css -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+      <section class="head">Sorting Visualiser</section>
+      <section class="data_container"></section>
+    
+      <button class="btn1" onclick="generate()" id="Button1">Generate Array</button>
+      <button class="btn3" onclick="window.location.reload()">Refresh</button>
+
+      <div class="btn2">
+        <a href="#" class="clickable">Algorithms</a>
+        <ul class="content">
+            <li><a href="#"  id="bubbleSort" onclick="BubbleSort(),disable()">Bubble Sort</a></li>
+            <li><a href="#"  id="selectionSort" onclick="SelectionSort(),disable()">Selection Sort</a></li>                    
+            <li><a href="#"  id="mergeSort" onclick="mergeSort(),disable()">Merge Sort</a></li>
+            <li><a href="#"  id="insertionSort" onclick="insertionSort(),disable()">Insertion Sort</a></li>
+        </ul>
+      </div>
+  
+  </body>
+
+   <script src="main.js"></script>
+   <script src="./Algorithms/bubbleSort.js"></script>
+   <script src="./Algorithms/selectionSort.js"></script>
+   <script src="./Algorithms/insertionSort.js"></script>
+   <script src="./Algorithms/mergeSort.js"></script>
+
+   </html>
